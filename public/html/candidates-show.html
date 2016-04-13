@@ -1,0 +1,7 @@
+<div data-ng-if="!vm.candidate">
+  <h2>That candidate couldn't be found!</h2>
+</div>
+<div data-ng-if="vm.candidate">
+  <h2>{{vm.candidate.name}} for President in {{vm.candidate.year}}!</h2>
+  <div data-candidate-form data-candidate="vm.candidate" data-action="edit"></div>
+</div>
